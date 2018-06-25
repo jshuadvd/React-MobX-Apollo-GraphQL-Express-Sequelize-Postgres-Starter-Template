@@ -5,5 +5,9 @@ export default `
 		members: [User!]!
 		channels: [Channel!]!
 	}
+	
+	type Mutation {
+		createGroup(name: String!): Boolean!
+	}
 
-`
+`;
