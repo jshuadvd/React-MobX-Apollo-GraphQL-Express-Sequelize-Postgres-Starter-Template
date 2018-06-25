@@ -7,7 +7,10 @@ import Sequelize from 'sequelize'
 const Op = Sequelize.Op
 const sequelize = new Sequelize('db_template', 'tester', 'test_password', {
 	operatorsAliases: false,
-	dialect: 'postgres'
+	dialect: 'postgres',
+	define: {
+		underscored: true
+	}
 })
 
 const models = {
