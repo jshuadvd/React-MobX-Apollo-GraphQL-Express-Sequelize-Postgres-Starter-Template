@@ -3,11 +3,14 @@ import bodyParser from 'body-parser'
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
 import { makeExecutableSchema } from 'graphql-tools'
 import path from 'path'
-import { fileLoader, mergeTypes } from 'merge-graphql-schemas'
+import { fileLoader, mergeTypes, mergeResolvers } from 'merge-graphql-schemas'
 
 import models from './models'
 
-const types = fileLoader(path.join(__dirname, './schema'))
+const typeDefs = mergeTypes(fileLoader(path.join(__dirname, './schema')))
+const resolvers = mergeResolvers(
+	fileLoader(path.join(__dirname, './resolvers'))
+)
 
 const typeDefs = mergeTypes(types, { all: true })
 
