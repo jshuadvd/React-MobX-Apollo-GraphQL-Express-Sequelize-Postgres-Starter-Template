@@ -1,4 +1,3 @@
-// GraphQL Query & Mutation Resolver
 export default {
 	Query: {
 		getUser: (parent, { id }, { models }) => models.User.findOne({ where: { id } }),
