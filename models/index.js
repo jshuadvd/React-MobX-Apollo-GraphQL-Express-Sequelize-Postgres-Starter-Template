@@ -1,5 +1,4 @@
 import Sequelize from 'sequelize';
-// var basename = path.basename(__filename)
 // var env = process.env.NODE_ENV || 'development'
 // var config = require(__dirname + '/../config/config.js')[env]
 const Op = Sequelize.Op;
