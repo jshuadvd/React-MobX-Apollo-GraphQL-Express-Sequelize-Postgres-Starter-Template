@@ -1,5 +1,3 @@
-// var fs = require('fs')
-// var path = require('path')
 import Sequelize from 'sequelize';
 // var basename = path.basename(__filename)
 // var env = process.env.NODE_ENV || 'development'
