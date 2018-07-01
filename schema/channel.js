@@ -9,7 +9,7 @@ export default `
 	}
 	
 	type Mutation {
-		createChannel(username: String!, email: String!, password: String!): User!
+		createChannel(groupID: Int!, name: String!, public: Boolean=false): Boolean!
 	}
 	
 `;

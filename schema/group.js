@@ -7,7 +7,7 @@ export default `
 	}
 	
 	type Mutation {
-		createGroup(groupID: Int!, name: String!, public: Boolean=false): Boolean!
+		createGroup(name: String!): Boolean!
 	}
 
 `;
