@@ -8,7 +8,7 @@ export default `
 	}
 	
 	type Mutation {
-		
+		createMessage()
 	}
 	
 `;
