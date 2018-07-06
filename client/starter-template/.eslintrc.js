@@ -1,5 +1,7 @@
 module.exports = {
 	extends: 'airbnb',
 	plugins: ['react', 'jsx-ally', 'import'],
-	globals: {},
+	globals: {
+		document: 1,
+	},
 };
