@@ -7,7 +7,7 @@ import './index.css';
 import Views from './views';
 
 const client = new ApolloClient({
-	uri: 'https://w5xlvm3vzz.lp.gql.zone/graphql',
+	uri: 'http://localhost:3000/graphql',
 });
 
 const App = <Views />;
